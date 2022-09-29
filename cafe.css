@@ -289,7 +289,6 @@ section .cafe-menu .menu-btn .menu-more {
 }
 
 #back-btn {
-  display: none;
   padding: 30px 10px;
   background-color: #a0522d;
   color: #fff;
@@ -301,6 +300,8 @@ section .cafe-menu .menu-btn .menu-more {
   right: 10px;
   text-align: center;
   width: 120px;
+  opacity: 1;
+  transition-duration: 0.5s;
 }
 @media screen and (max-width: 767px) {
   #back-btn {

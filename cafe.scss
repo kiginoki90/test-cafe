@@ -356,8 +356,6 @@ section {
 
 
 #back-btn {
-  display: none;
-
   padding: 30px 10px;
   background-color: #a0522d;
   color: #fff;
@@ -371,6 +369,10 @@ section {
 
   text-align: center;
   width: 120px;
+
+  
+ opacity: 1;
+transition-duration: 0.5s;
 
   @include mq(sp) {
     width: 50px;
