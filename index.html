@@ -8,6 +8,7 @@
   <title>SAMPLE Cafe</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="cafe.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -16,16 +17,16 @@
       <div class="header-flex">
         <h1><img src="images/header-logo.png" alt=""></h1>
 
-        <nav id="nav-cafe">
+        <nav class="nav_cafe">
           <ul>
             <li>
-              <a class="nav-link" href="cafe.html">MENU</a>
+              <a class="nav-link" href="#title-menu">MENU</a>
             </li>
             <li>
-              <a class="nav-link" href="cafe.html">ACCESS</a>
+              <a class="nav-link" href="#access">ACCESS</a>
             </li>
             <li>
-              <a class="nav-link" href="cafe.html">CONTCT</a>
+              <a class="nav-link" href="#access">CONTCT</a>
             </li>
           </ul>
         </nav>
@@ -40,13 +41,13 @@
 
   <main>
     <div id="cafe-main">
-      <span>木に囲まれた温かい空間で<br>くつろぎのひとときを</span>
+      <span data-aos="fade-up">木に囲まれた温かい空間で<br>くつろぎのひとときを</span>
     </div>
 
     <section>
-      <h2>MENU</h2>
-      <div id="menu">
-        <div class="cafe-menu">
+      <h2 id="title-menu">MENU</h2>
+      <div  id="menu">
+        <div data-aos="fade-up" class="cafe-menu">
           <div class="menu-label">
             <img class="menu-img" src="images/Lunch.png" alt="Lunch Menu">
             <p>Lunch</p>
@@ -58,7 +59,7 @@
           </div>
         </div>
 
-        <div class="cafe-menu">
+        <div data-aos="fade-up" class="cafe-menu">
           <div class="menu-label">
             <img class="menu-img" src="images/Dessert.png" alt="Dessert Menu">
             <p>Dessert</p>
@@ -70,7 +71,7 @@
           </div>
         </div>
 
-        <div class="cafe-menu">
+        <div data-aos="fade-up" class="cafe-menu">
           <div class="menu-label">
             <img class="menu-img" src="images/drink.png" alt="drink menu">
             <p>Drink</p>
@@ -119,6 +120,10 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/cafe.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 </html>
