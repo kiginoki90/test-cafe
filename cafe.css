@@ -13,33 +13,71 @@ header {
   border-bottom: 10px solid #cd853f;
   z-index: 1000;
   margin: 0;
+  height: 80px;
 }
-header h1 {
-  width: 200px;
-}
-@media screen and (max-width: 767px) {
-  header h1 {
-    width: 150px;
-    height: auto;
-    margin: auto 30px;
-  }
-}
-header #nav-cafe {
-  width: 300px;
+header .nav_cafe {
+  height: 60px;
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
-  header #nav-cafe {
+  header .nav_cafe {
     display: none;
+    width: 100%;
+    height: 500px;
+    background-color: #a0522d;
+    opacity: 0.9;
+  }
+  header .nav_cafe.open {
+    display: block;
   }
 }
-header #nav-cafe ul {
+header .nav_cafe ul {
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  header .nav_cafe ul {
+    display: block;
+    position: absolute;
+    top: 60px;
+  }
+}
+header .nav_cafe ul li {
+  width: 150px;
+}
+@media screen and (max-width: 767px) {
+  header .nav_cafe ul li {
+    padding: 30px;
+    width: 100%;
+    text-align: right;
+    padding-right: 100px;
+  }
+}
+header .nav_cafe ul li a {
+  font-size: 25px;
 }
 
 .header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100px;
+}
+.header-flex h1 {
+  width: 200px;
+  z-index: 900;
+  position: absolute;
+  top: 10px;
+}
+@media screen and (max-width: 767px) {
+  .header-flex h1 {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 }
 
 .openbtn1 {
@@ -56,6 +94,9 @@ header #nav-cafe ul {
     border-radius: 5px;
     margin: 0 0 0 auto;
     display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
     /*ボタン内側*/
   }
   .openbtn1 span {

@@ -25,7 +25,6 @@ function scroll_to_top(){
 };
 
 
-
 window.addEventListener( 'scroll' , scroll_event );
 
 function scroll_event(){
@@ -39,3 +38,8 @@ function scroll_event(){
 	}
 	
 };
+
+$(".openbtn1").click(function () {
+ $('.nav_cafe').toggleClass('open');
+
+});

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAMPLE Cafe</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="cafe.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div class="header-flex">
+        <h1><img src="images/header-logo.png" alt=""></h1>
+
+        <nav class="nav_cafe">
+          <ul>
+            <li>
+              <a class="nav-link" href="#title-menu">MENU</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#access">ACCESS</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#access">CONTCT</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="openbtn1"><span></span><span></span><span></span></div>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <div id="cafe-main">
+      <span data-aos="fade-up">木に囲まれた温かい空間で<br>くつろぎのひとときを</span>
+    </div>
+
+    <section>
+      <h2 id="title-menu">MENU</h2>
+      <div  id="menu">
+        <div data-aos="fade-up" class="cafe-menu">
+          <div class="menu-label">
+            <img class="menu-img" src="images/Lunch.png" alt="Lunch Menu">
+            <p>Lunch</p>
+          </div>
+          <h3>Lunch Menu</h3>
+          <p>サンプルテキストです</p>
+          <div class="menu-btn">
+            <a class="menu-more" href="#">MORE</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="cafe-menu">
+          <div class="menu-label">
+            <img class="menu-img" src="images/Dessert.png" alt="Dessert Menu">
+            <p>Dessert</p>
+          </div>
+          <h3>Dessert Menu</h3>
+          <p>サンプルテキストです</p>
+          <div class="menu-btn">
+            <a class="menu-more" href="#">MORE</a>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="cafe-menu">
+          <div class="menu-label">
+            <img class="menu-img" src="images/drink.png" alt="drink menu">
+            <p>Drink</p>
+          </div>
+          <h3>Drink Menu</h3>
+          <p>サンプルテキストです</p>
+          <div class="menu-btn">
+            <a class="menu-more" href="#">MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access">
+      <div>
+        <h2>ACCESS</h2>
+
+        <div id="access-cafe">
+
+          <img id="access-img" src="images/access-image.png" alt="">
+
+          <div id="access-logo">
+            <h3> <img src="images/access-logo.png" alt=""> </h3>
+            <address id="access-p">
+              住所：東京都●●区●●丁目 <br>
+              TEL:000-000-0000 <br>
+              営業時間:AM9:00～PM20:00
+            </address>
+            <div id="access-btn">
+              <a id="access-a" href="#">ご予約はこちら <img src="images/mail.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <p id="back-btn">&#x21E7;</p>
+
+    <footer>
+      <span id="copyright">Copyright &copy;2021-SAMPLE-Cafe</span>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/cafe.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
